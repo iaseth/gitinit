@@ -9,24 +9,29 @@
 
 * Set up common aliases:
     ```
+    git config --global alias.i init
     git config --global alias.a add
     git config --global alias.b branch
+
     git config --global alias.co checkout
+    git config --global alias.cob "checkout -b"
 
     git config --global alias.c commit
     git config --global alias.cm "commit -m"
+
     git config --global alias.d diff
+    git config --global alias.dc "diff --cached"
+    git config --global alias.ds "diff --stat"
 
     git config --global alias.l log
-    git config --global alias.s status
-    git config --global alias.pull ll
-    git config --global alias.push p
+    git config --global alias.ll "log --oneline"
+    git config --global alias.last "log -1 HEAD --stat"
 
     git config --global alias.s status
-    git config --global alias.s status
-    git config --global alias.s status
-    git config --global alias.s status
-    git config --global alias.s status
+
+    git config --global alias.ll pull
+    git config --global alias.p push
+    git config --global alias.p0 "push -u origin master"
     ```
 
 * Set up other options:
